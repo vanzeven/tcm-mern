@@ -60,12 +60,12 @@ const Sidebar = (props) => {
             My Accounts
           </div>
           <hr />
-          <div
+          {/* <div
             onClick={(e) => history.push("/wish-list")}
             className={` px-4 py-4 hover:bg-gray-200 cursor-pointer`}
           >
             My Wishlist
-          </div>
+          </div> */}
           <hr />
           <div
             onClick={(e) => history.push("/user/setting")}
