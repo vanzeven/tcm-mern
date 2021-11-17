@@ -30,3 +30,6 @@ npm run start
 ```
 
 Access the web app at http://localhost:3000/
+
+### Preview
+![image](https://user-images.githubusercontent.com/11045113/142147534-b82d5758-00d0-43a6-99b2-2d396df14670.png)
