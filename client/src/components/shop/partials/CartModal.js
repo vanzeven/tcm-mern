@@ -118,9 +118,9 @@ const CartModal = (props) => {
                             <div>
                               {" "}
                               <span className="text-sm text-gray-400">
-                                Subtotoal :
+                                Subtotal:
                               </span>{" "}
-                              ${subTotal(item._id, item.pPrice)}.00
+                              Rp{subTotal(item._id, item.pPrice)}.00
                             </div>{" "}
                             {/* SUbtotal Count */}
                           </div>
@@ -173,7 +173,7 @@ const CartModal = (props) => {
                       cartModalOpen();
                     }}
                   >
-                    Checkout ${data.cartTotalCost}.00
+                    Checkout Rp{data.cartTotalCost}.00
                   </div>
                 ) : (
                   <div
@@ -191,7 +191,7 @@ const CartModal = (props) => {
                       });
                     }}
                   >
-                    Checkout ${data.cartTotalCost}.00
+                    Checkout Rp{data.cartTotalCost}.00
                   </div>
                 )}
               </Fragment>
