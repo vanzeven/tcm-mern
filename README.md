@@ -1,6 +1,6 @@
-### Prerequisites
+### Prerequisites (for testing)
 
-NPM / Yarn and Node.js installed
+NPM / Yarn, MongoDB, and Node.js installed
 
 ### Installing
 
