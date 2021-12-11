@@ -36,18 +36,32 @@ const customizeRouter = require("./routes/customize");
 const { loginCheck } = require("./middleware/auth");
 
 // Database Connection
-mongoose
-  .connect(process.env.DATABASE, {
+// mongoose
+//   .connect(process.env.DATABASE, {
+//     useNewUrlParser: true,
+//     useUnifiedTopology: true,
+//     useCreateIndex: true,
+//   })
+//   .then(() =>
+//     console.log(
+//       "==============Mongodb Database Connected Successfully=============="
+//     )
+//   )
+
+//   .catch((err) => console.log("Database Not Connected !!!"));
+
+try {
+  mongoose.connect("mongodb://localhost:27017/Ecommerce", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,
-  })
-  .then(() =>
-    console.log(
-      "==============Mongodb Database Connected Successfully=============="
-    )
-  )
-  .catch((err) => console.log("Database Not Connected !!!"));
+  });
+  console.log("Database Connected Successfully");
+} catch (err) {
+  console.log("Database Not Connected");
+}
+
+  
 
 // Middleware
 app.use(morgan("dev"));
